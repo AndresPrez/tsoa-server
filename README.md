@@ -1,6 +1,6 @@
 # tsoa-server
 
-TypeScript Server with (tosoa)[https://github.com/lukeautry/tsoa]
+TypeScript Server with [tsoa](https://github.com/lukeautry/tsoa)
 
 Dependency Description:
 
