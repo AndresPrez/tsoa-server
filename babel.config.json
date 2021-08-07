@@ -1,0 +1,22 @@
+{
+  "presets": ["@babel/preset-env"],
+  "plugins": [
+    "@babel/plugin-proposal-class-properties",
+    "@babel/transform-runtime",
+    [
+      "module-resolver",
+      {
+        "root": ["./src"],
+        "extensions": [".js", ".ts", ".tsx", ".json"],
+        "alias": {
+          "@configs": "./src/configs",
+          "@state": "./src/state",
+          "@routes": "./src/routes",
+          "@models": "./src/models",
+          "@controllers/*": "./src/controllers",
+          "@services/*": "./src/services"
+        }
+      }
+    ]
+  ]
+}

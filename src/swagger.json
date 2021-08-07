@@ -1,0 +1,57 @@
+{
+	"components": {
+		"examples": {},
+		"headers": {},
+		"parameters": {},
+		"requestBodies": {},
+		"responses": {},
+		"schemas": {},
+		"securitySchemes": {
+			"apiKey": {
+				"type": "apiKey",
+				"name": "dummy",
+				"in": "header"
+			}
+		}
+	},
+	"info": {
+		"title": "API",
+		"version": "1.0.0",
+		"description": "The API",
+		"license": {
+			"name": "ISC"
+		},
+		"contact": {}
+	},
+	"openapi": "3.0.0",
+	"paths": {
+		"/status": {
+			"get": {
+				"operationId": "GetServerStatus",
+				"responses": {
+					"200": {
+						"description": "Ok",
+						"content": {
+							"application/json": {
+								"schema": {
+									"type": "string"
+								}
+							}
+						}
+					}
+				},
+				"security": [
+					{
+						"dummy": []
+					}
+				],
+				"parameters": []
+			}
+		}
+	},
+	"servers": [
+		{
+			"url": "http://localhost:3000/"
+		}
+	]
+}

@@ -1,0 +1,30 @@
+{
+    "entryFile": "src/index.ts",
+    "noImplicitAdditionalProperties": "throw-on-extras",
+    "controllerPathGlobs": [
+        "src/**/*.controller.ts"
+    ],
+    "spec": {
+        "specVersion": 3,
+        "outputDirectory": "src",
+        "entryFile": "src/index.ts",
+        "name": "API",
+        "description": "The API",
+        "host": "localhost:3000",
+        "schemes": [
+            "http",
+            "https"
+        ],
+        "securityDefinitions": {
+            "apiKey": {
+                "type": "apiKey",
+                "name": "dummy",
+                "in": "header"
+            }
+        }
+    },
+    "routes": {
+        "routesDir": "src/routes",
+        "authenticationModule": "src/middlewares/authentication.ts"
+    }
+}
